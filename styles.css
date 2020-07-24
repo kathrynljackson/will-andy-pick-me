@@ -12,15 +12,18 @@ clear button disabled: #D0CDCD
 */
 
 .page-title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Life Savers', serif;
+
 }
 
 .big-box {
   font-family: 'Life Savers', serif;
   background-color: #E6ECF4;
+  width: 600px;
 }
 
 .answer-button {
+  font-family: 'Open Sans', sans-serif;
   background-color: #2B4E80;
 }
 
@@ -33,6 +36,7 @@ clear button disabled: #D0CDCD
 }
 
 .user-input {
+  font-family: 'Open Sans', sans-serif;
   color: #2B4E80;
 }
 
