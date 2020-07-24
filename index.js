@@ -1,7 +1,8 @@
-var eightBall = document.querySelector('eight-ball.png');
+var eightBall = document.querySelector('.eight-ball');
 var answerButton = document.querySelector('.answer-button');
 var clearButton = document.querySelector('.clear-button');
 var userInput = document.querySelector('.user-input');
+var questionAnswer = document.querySelector('.question-answer')
 
 var answersArray = [
 "It is certain.",
@@ -25,23 +26,32 @@ var answersArray = [
 "Very doubtful",
 ]
 
-function getRandomIndex(array) {
-  return Math.floor(Math.random() * array.length);
-}
-
-function answer() {
-  newAnswer = answersArray[getRandomIndex(answersArray)]
-}
 
 window.addEventListener("click", clickHandler)
 
 function clickHandler(event) {
   if (event.target === answerButton) {
+    document.getElementById("eight-ball").hidden = true;
     answer();
     console.log("answer button clicked")
   }
   if (event.target === clearButton) {
-    userInput.innerText.length === 0;
+
     console.log("clear button clicked")
   }
+}
+
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
+}
+
+function answer() {
+  newAnswer = answersArray[getRandomIndex(answersArray)];
+  console.log("answer function runs");
+  questionAnswer.innerText = newAnswer
+}
+
+
+function inputClear() {
+  document.getElementById("user-input").innerText.length === 0;
 }

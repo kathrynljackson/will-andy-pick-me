@@ -10,13 +10,18 @@
   <div class="page-title"><h1>Will Andy Pick Me?<h1></div>
   <div class="page-content">
     <div class="big-box">
-      <input class="user-input" placeholder="Ask your question here!">
+      <input class="user-input" id="user-input" placeholder="Ask your question here!">
       <button class="answer-button">Get your answer</button>
-      <div class="eight-ball"><img src="assets/eight-ball.png" ></div>
+      <div class="eight-ball" >
+        <img id="eight-ball" src="assets/eight-ball.png" >
+        <div id="question-answer hidden" class="question-answer hidden">
+          <p id="question"></p>
+          <p id="question"></p>
+        </div>
+      </div>
       <button class="clear-button">Clear</button>
     </div>
     <div class="woody"><img src="assets/woody.png"></div>
-
+  <script src="index.js"></script>
   </body>
 </html>
-<script src="styles.css"></script>
