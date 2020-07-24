@@ -10,9 +10,9 @@ light blue background: #E6ECF4;
 clear button: #DE4841;
 clear button disabled: #D0CDCD
 */
-body {
-  text-align: center;
 
+.page-title {
+  text-align: center;
 }
 
 body div {
