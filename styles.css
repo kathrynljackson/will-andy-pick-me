@@ -19,3 +19,28 @@ clear button disabled: #D0CDCD
   font-family: 'Life Savers', serif;
   background-color: #E6ECF4;
 }
+
+.answer-button {
+  background-color: #2B4E80;
+}
+
+.answer-button hover {
+  background-color: #1C3455;
+}
+
+.answer-button disabled {
+  background-color: #607AA0;
+}
+
+.user-input {
+  color: #2B4E80;
+}
+
+.clear-button {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #DE4841;
+}
+
+.clear-button disabled {
+  background-color: #D0CDCD;
+}
