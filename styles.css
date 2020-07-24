@@ -11,9 +11,7 @@ clear button: #DE4841;
 clear button disabled: #D0CDCD
 */
 
-.page-title {
-  text-align: center;
-}
+
 
 body div {
   display: flex;
@@ -22,7 +20,9 @@ body div {
 
 .page-title {
   font-family: 'Life Savers', serif;
+  font-size: 30px;
   color: #2B4E80;
+  text-align: center;
 }
 
 .page-content {
@@ -47,6 +47,7 @@ margin: 3%;
   padding: 2%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .big-box input, button {
@@ -89,6 +90,17 @@ margin: 3%;
   ;
 }
 
+.question {
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+}
+
+.answer {
+  font-size: 40px;
+  text-align: center;
+}
+
 .woody {
   align-self: flex-end;
 }
@@ -112,8 +124,10 @@ margin: 3%;
   align-self: flex-end;
   width: 20%;
   padding: 1%;
-  /* margin-top: 20%; */
-  margin-bottom: auto;
+  position: absolute;
+  right: 4%;
+  bottom: 4%;
+  /* margin-bottom: auto; */
 }
 
 .clear-button:disabled {

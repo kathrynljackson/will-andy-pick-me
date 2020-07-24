@@ -30,18 +30,23 @@ var answersArray = [
 
 
 window.addEventListener("click", clickHandler)
+// document.getElementById("answer-button").disabled = true;
 
 function clickHandler(event) {
   if (event.target === answerButton) {
     document.getElementById("eight-ball").hidden = true;
     answer();
-    document.getElementById("answer-button").disabled = true;
+
     console.log("answer button clicked")
   }
   if (event.target === clearButton) {
 
     console.log("clear button clicked")
   }
+}
+
+if (userInput.value.length > 0){
+  document.getElementById("answer-button").removeAttribute(disabled);
 }
 
 function getRandomIndex(array) {
@@ -53,6 +58,7 @@ function answer() {
   console.log("answer function runs");
   questionDisplay.innerText = '"'+userInput.value+'"';
   answerDisplay.innerText = newAnswer;
+  userInput.value = null;
 }
 
 
